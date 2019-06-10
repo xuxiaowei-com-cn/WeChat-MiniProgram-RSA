@@ -13,7 +13,7 @@
 # WeChat-MiniProgram-RSA
 微信小程序 RSA 非对称性加密
 
-- JS 非对称性加密使用了 [jsencrypt](https://github.com/travist/jsencrypt) ，对 jsencrypt 进行了错误修正（符合微信小程序语法），调用方式也发生了少许变化，使用方法如下，详情参见示例
+- JS 非对称性加密使用了 [jsencrypt](https://github.com/travist/jsencrypt) ，对 jsencrypt 进行了错误修正（符合微信小程序语法），调用方式也发生了少许变化，使用方法如下，详情参见示例 [RSA.js](https://github.com/XXWXHK/WeChat-MiniProgram-RSA/blob/master/WeChat-Mini-Program/pages/RSA/RSA.js)
 
 ```
 
