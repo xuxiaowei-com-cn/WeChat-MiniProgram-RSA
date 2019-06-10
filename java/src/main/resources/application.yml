@@ -1,0 +1,12 @@
+# 服务器 配置
+server:
+  # 服务器端口
+  port: 80
+#
+# 日志 配置
+logging:
+  level:
+    # web 日志扫描
+    web: debug
+    # 项目（本项目的包结构） 日志扫描
+    cn.com.xuxiaowei: debug
