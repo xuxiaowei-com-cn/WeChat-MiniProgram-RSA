@@ -8,6 +8,11 @@
     </block>
   </view>
   <view class="usermotto">
+    <navigator url="../RSA/RSA" hover-class="navigator-hover">
+      <button>RSA非对称性加密</button>
+    </navigator>
+  </view>
+  <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
