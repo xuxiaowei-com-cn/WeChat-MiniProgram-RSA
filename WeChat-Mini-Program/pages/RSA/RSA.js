@@ -30,6 +30,8 @@ Page({
    */
   onShow: function () {
 
+    var crypt = rsa.JSEncrypt
+
   },
 
   /**

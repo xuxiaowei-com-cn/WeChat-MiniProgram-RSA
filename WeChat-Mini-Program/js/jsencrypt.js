@@ -1,3 +1,7 @@
+var JSEncrypt = {
+  prototype: {}
+};
+
 (function(global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
     typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -2557,6 +2561,11 @@
     }
     return c;
   }
+
+  var navigator = {
+    appName: {}
+  }
+
   if (j_lm && (navigator.appName == "Microsoft Internet Explorer")) {
     BigInteger.prototype.am = am2;
     dbits = 30;
@@ -2686,6 +2695,11 @@
     rng_pool = [];
     rng_pptr = 0;
     var t = void 0;
+
+    var window = {
+      crypto: {}
+    };
+
     if (window.crypto && window.crypto.getRandomValues) {
       // Extract entropy (2048 bits) from RNG if available
       var z = new Uint32Array(256);
@@ -5139,7 +5153,7 @@
    * - log                     {boolean} default: false whether log warn/error or not
    * @constructor
    */
-  var JSEncrypt = /** @class */ (function() {
+  JSEncrypt = /** @class */ (function() {
     function JSEncrypt(options) {
       options = options || {};
       this.default_key_size = parseInt(options.default_key_size, 10) || 1024;
@@ -5319,3 +5333,7 @@
   });
 
 })));
+
+module.exports = {
+  JSEncrypt: JSEncrypt
+}
