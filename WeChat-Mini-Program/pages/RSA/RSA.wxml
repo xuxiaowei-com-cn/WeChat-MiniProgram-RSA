@@ -1,2 +1,40 @@
 <!--pages/RSA/RSA.wxml-->
-<text>pages/RSA/RSA.wxml</text>
+<!-- <text>pages/RSA/RSA.wxml</text> -->
+
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+
+  <view class="page__hd">
+    <view class="page__title">RSA 非对称性加密</view>
+  </view>
+
+  <view class="page__bd">
+
+    <form bindsubmit="formSubmit">
+
+      <view class="weui-cells__title">表单</view>
+      <view class="weui-cells weui-cells_after-title">
+
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">加密的内容</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" name="text" placeholder="请输入需要加密的内容" />
+          </view>
+        </view>
+
+      </view>
+
+      <view class="weui-cells__tips">1、在微信开发者工具控制台可查看到本次加密的公钥、加密后发送的数据</view>
+
+      <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" form-type="submit">确定</button>
+      </view>
+
+    </form>
+
+    <view class="weui-cells__tips">1、本页样式使用方法了《WeUI》，GitHub 地址：https://github.com/Tencent/weui-wxss</view>
+    <view class="weui-cells__tips">2、发送携带Cookie请求使用了《weapp-cookie》，GitHub 地址：https://github.com/charleslo1/weapp-cookie</view>
+
+  </view>
+</view>
