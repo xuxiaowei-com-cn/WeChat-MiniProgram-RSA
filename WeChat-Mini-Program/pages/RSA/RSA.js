@@ -22,18 +22,18 @@ Page({
 
     var publicKey = this.data.publicKey
 
-    var crypt = rsa.JSEncrypt
+    var encrypt = rsa.JSEncrypt
 
-    crypt.prototype.setPublicKey(publicKey);
+    encrypt.prototype.setPublicKey(publicKey);
 
-    var encryptText = crypt.prototype.encrypt(text);
+    var encryptedText = encrypt.prototype.encrypt(text);
 
-    console.log('加密后的数据：', encryptText)
+    console.log('加密后的数据：', encryptedText)
 
     wx.request({
       url: 'http://127.0.0.1/rsa/decrypt.do',
       data: {
-        text: encryptText
+        text: encryptedText
       },
       success: res => {
         // console.log("success", res)
