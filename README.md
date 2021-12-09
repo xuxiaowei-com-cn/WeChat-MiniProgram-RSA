@@ -22,6 +22,7 @@
       - 在开头添加`var JSEncrypt={prototype: {}};`
       - 在`if(window.crypto&&window.crypto.getRandomValues)`前添加`var window={crypto:{}};`
       - 在最后添加`module.exports={JSEncrypt: JSEncrypt}`
+      - 已修改完成的版本，参见：[jsencrypt.min-3.2.1.js](./WeChat-Mini-Program/js/jsencrypt.min-3.2.1.js)
       - 使用`jsencrypt.min.js`文件即可，使用方法同：[RSA.js](./WeChat-Mini-Program/pages/RSA/RSA.js)
 
 ```
