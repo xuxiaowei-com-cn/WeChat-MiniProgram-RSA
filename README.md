@@ -14,15 +14,15 @@
 微信小程序 RSA 非对称性加密
 
 - JS 非对称性加密使用了 [jsencrypt](https://github.com/travist/jsencrypt) ，对 jsencrypt 进行了错误修正（符合微信小程序语法），调用方式也发生了少许变化，使用方法如下，详情参见示例 [RSA.js](https://github.com/XXWXHK/WeChat-MiniProgram-RSA/blob/master/WeChat-Mini-Program/pages/RSA/RSA.js)
-- 使用的版本为 jsencrypt-3.0.0-rc.1
-- jsencrypt-3.2.1
-    - 需要将`webpack.config.js`文件中的`libraryTarget`修改为`assign`
-    - 然后运行`build`进行打包
-    - 修改`jsencrypt.min.js`文件
-    - 在开头添加`var JSEncrypt={prototype: {}};`
-    - 在`if(window.crypto&&window.crypto.getRandomValues)`前添加`var window={crypto:{}};`
-    - 在最后添加`module.exports={JSEncrypt: JSEncrypt}`
-    - 使用`jsencrypt.min.js`文件即可，使用方法同：[RSA.js](./WeChat-Mini-Program/pages/RSA/RSA.js)
+  - 使用的版本为 jsencrypt-3.0.0-rc.1
+  - jsencrypt-3.2.1
+      - 需要将`webpack.config.js`文件中的`libraryTarget`修改为`assign`
+      - 然后运行`build`进行打包
+      - 修改`jsencrypt.min.js`文件
+      - 在开头添加`var JSEncrypt={prototype: {}};`
+      - 在`if(window.crypto&&window.crypto.getRandomValues)`前添加`var window={crypto:{}};`
+      - 在最后添加`module.exports={JSEncrypt: JSEncrypt}`
+      - 使用`jsencrypt.min.js`文件即可，使用方法同：[RSA.js](./WeChat-Mini-Program/pages/RSA/RSA.js)
 
 ```
 
